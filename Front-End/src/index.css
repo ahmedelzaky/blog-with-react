@@ -5,7 +5,7 @@
   margin: 0;
   font-family: "Quicksand";
   color: #ccc;
- /*  text-transform: capitalize; */
+  text-transform: capitalize;
   --main-color: #1ea3eb;
   --main-hover-color: #9ed4f4;
 }
