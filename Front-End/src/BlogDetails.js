@@ -27,7 +27,13 @@ const BlogDetails = () => {
         <article>
           <h2>{blog.attributes.title}</h2>
           <p> Written by {blog.attributes.author} </p>
-          <div> {blog.attributes.body} </div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: blog.attributes.body
+                .replace(/\\n/g, "<br>")
+                .replace(/\\/g, " "),
+            }}
+          ></div>
           <button className="delete-button" onClick={handleClick}>
             delete
           </button>

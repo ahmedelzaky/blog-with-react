@@ -5,7 +5,7 @@
   margin: 0;
   font-family: "Quicksand";
   color: #ccc;
-  text-transform: capitalize;
+ /*  text-transform: capitalize; */
   --main-color: #1ea3eb;
   --main-hover-color: #9ed4f4;
 }
@@ -57,6 +57,19 @@ header a {
 header a:hover {
   color: var(--main-color);
 }
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 20px;
+  }
+  header a {
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 10px;
+    padding: 3px;
+  }
+}
+
 .content {
   max-width: 600px;
   margin: 40px auto;

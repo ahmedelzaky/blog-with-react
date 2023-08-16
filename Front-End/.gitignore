@@ -24,3 +24,7 @@ yarn-error.log*
 
 #secret
 .env
+.firebaserc
+firebase.json
+/.firebase
+firebase-debug.log
