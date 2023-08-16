@@ -2,10 +2,8 @@
 import BlogList from "./BlogList";
 import useFetch from "./UseFetch";
 
-const url = "https://blog-with-react.onrender.com/api/blogs";
-
 const Home = () => {
-  const { data: blogs, isPending, error } = useFetch(url);
+  const { data: blogs, isPending, error } = useFetch(process.env.REACT_APP_API);
 
   return (
     <div className="home">

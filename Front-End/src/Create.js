@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const url = "https://blog-with-react.onrender.com/api/blogs";
-
 const Create = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
@@ -16,7 +14,7 @@ const Create = () => {
     const blog = { title, body, author };
     setIsPending(true);
 
-    fetch(url, {
+    fetch(process.env.REACT_APP_API, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

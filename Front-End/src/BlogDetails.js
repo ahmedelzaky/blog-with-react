@@ -1,16 +1,18 @@
 import { useNavigate, useParams } from "react-router-dom";
 import useFetch from "./UseFetch";
 
-const url = "https://blog-with-react.onrender.com/api/blogs/";
-
 const BlogDetails = () => {
   const { id } = useParams();
   const history = useNavigate();
 
-  const { data: blog, error, isPending } = useFetch(url + id);
+  const {
+    data: blog,
+    error,
+    isPending,
+  } = useFetch(`${process.env.REACT_APP_API}/${id}`);
 
   const handleClick = () => {
-    fetch(url + blog.id, {
+    fetch(`${process.env.REACT_APP_API}/${blog.id}`, {
       method: "DELETE",
     }).then(() => {
       history("/");
