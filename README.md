@@ -77,6 +77,12 @@ npm install
 ```bash
 npm start
 ```
+### Create .env 
+
+Create .env file and type 
+```bash
+REACT_APP_API = http://localhost:1337/api/blogs
+```
 
 ## Configuration
 
