@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const url = "http://localhost:1337/api/blogs";
+const url = "https://blog-with-react.onrender.com/api/blogs";
 
 const Create = () => {
   const [title, setTitle] = useState("");

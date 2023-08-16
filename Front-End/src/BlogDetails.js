@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import useFetch from "./UseFetch";
 
-const url = "http://localhost:1337/api/blogs/";
+const url = "https://blog-with-react.onrender.com/api/blogs/";
 
 const BlogDetails = () => {
   const { id } = useParams();
