@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #ccc;
+  text-transform: capitalize;
+  --main-color: #1ea3eb;
+  --main-hover-color: #9ed4f4;
+}
+
+.active {
+  color: var(--main-color);
+}
+
+body {
+  background-color: #1f1f1f;
+}
+
+h2 {
+  color: var(--main-color);
+}
+
+button {
+  background: var(--main-color);
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+header h1 {
+  color: var(--main-color);
+}
+header .links {
+  display: flex;
+}
+
+header a {
+  display: block;
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+header a:hover {
+  color: var(--main-color);
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.blog-list a {
+  text-decoration: none;
+}
+.blog-list .blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  /* background-color: #f9f9f9; */
+  border-bottom: 1px solid #434343;
+  overflow: hidden;
+}
+.blog-list .blog-preview button {
+  float: right;
+  margin: 5px 0;
+  padding: 5px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 14px;
+  border-radius: 15px;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.blog-list .blog-preview button:hover {
+  background-color: var(--main-hover-color);
+}
+.blog-list .blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(255, 255, 255, 0.2);
+}
+.blog-list .blog-preview:hover h2 {
+  color: var(--main-hover-color);
+}
+.blog-list .blog-preview h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.blog-details h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 20px 0;
+}
+
+.delete-button {
+  float: right;
+}
+.delete-button:hover {
+  background-color: var(--main-hover-color);
+}
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  color: black;
+  border-radius: 10px;
+}
+.create textarea {
+  height: 150px;
+}
+
+.not-found {
+  margin-top: 10px;
+  text-align: center;
+}
+.not-found h1 {
+  font-size: 300px;
+}
+
+@media (max-width: 768px) {
+  .not-found h1 {
+    font-size: 200px;
+  }
+}
+
+.not-found a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: var(--main-color);
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+}
